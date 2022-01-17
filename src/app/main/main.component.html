@@ -1,0 +1,52 @@
+<h2>FORM</h2>
+<form autocomplete="on" method="post">
+    <fieldset style="width: max-content;">
+        <legend>
+            <h2>Personal Info</h2>
+        </legend>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30" style="resize: none;"></textarea><br><br>
+
+        <label for="E-mail">E-mail:</label>
+        <input type="text" id="E-mail" name="E-mail" required autofocus><br><br>
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-567-890"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="others">Others</label><br><br>
+
+        <label for="education">Education:</label>
+        <input list="education" name="Education">
+        <datalist id="education">
+            <option value="B.Sc.">
+            <option value="M.Sc.">
+            <option value="B.E./B.Tech">
+            <option value="M.E./M.Tech">
+            <option value="BCA">
+            <option value="MCA">
+        </datalist><br><br>
+
+        <label for="datemin">Enter Birthdate</label>
+        <input type="date" id="datemin" name="datemin" min="1995-12-31"><br><br>
+
+        <label for="datemax">Enter Joining date as Intern</label>
+        <input type="date" id="datemax" name="datemax" max="2022-01-12"><br><br>
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#0f98f4"><br><br>
+
+        <input type="submit" value="Submit"><br><br>
+    </fieldset>
+</form>
